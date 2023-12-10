@@ -1,0 +1,10 @@
+{
+  "id": "trustAllDomains",
+  "version": "1.0.0",
+  "meta": {
+    "name": "Trust All Domains",
+    "tagline": "Trust all links and downloads",
+    "authors": ["redstonekasi"],
+    "source": "https://github.com/redstonekasi/moonlight-extensions"
+  }
+}
