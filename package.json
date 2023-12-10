@@ -9,10 +9,10 @@
   },
   "devDependencies": {
     "@electron/asar": "^3.2.8",
-    "esbuild": "^0.19.3",
+    "esbuild": "^0.19.9",
     "esbuild-copy-static-files": "^0.1.0"
   },
   "dependencies": {
-    "@moonlight-mod/types": "^1.1.0"
+    "@moonlight-mod/types": "^1.1.4"
   }
 }
