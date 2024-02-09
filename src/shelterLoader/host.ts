@@ -34,9 +34,10 @@ if (sourceType === "remote") {
     req.on("error", reject);
     req.end();
   });
-} else {
-  const resolved = path.resolve(sourcePath);
-  bundle = fs.readFile(resolved, "utf8").then((v) => v + `\n//# sourceMappingURL=file://${resolved}.map`);
 }
 
-ipcMain.handle("_shelter_getBundle", () => bundle)
+ipcMain.handle("_shelter_getBundle", () => {
+  if (bundle) return bundle;
+  const resolved = path.resolve(sourcePath);
+  return fs.readFile(resolved, "utf8").then((v) => v + `\n//# sourceMappingURL=file://${resolved}.map`);
+});
