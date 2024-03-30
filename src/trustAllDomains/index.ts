@@ -2,7 +2,7 @@ import { ExtensionWebExports } from "@moonlight-mod/types";
 
 export const patches: ExtensionWebExports["patches"] = [
   {
-    find: 'displayName="MaskedLinkStore"',
+    find: '"MaskedLinkStore"',
     replace: {
       match: /(?<=isTrustedDomain\(\i\)\{)/,
       replacement: "return!0;"
