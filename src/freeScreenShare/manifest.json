@@ -1,0 +1,10 @@
+{
+  "id": "freeScreenShare",
+  "version": "1.0.0",
+  "meta": {
+    "name": "Free Screen Share",
+    "tagline": "Makes all screen share presets free",
+    "authors": ["redstonekasi"],
+    "source": "https://github.com/redstonekasi/moonlight-extensions"
+  }
+}
