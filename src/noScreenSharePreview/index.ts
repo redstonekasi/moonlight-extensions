@@ -4,7 +4,7 @@ export const patches: ExtensionWebExports["patches"] = [
   {
     find: '"ApplicationStreamPreviewUploadManager"',
     replace: {
-      match: /(?<=\.default=)/,
+      match: /(?<=\.Z=)/,
       replacement: "{init(){}},"
     }
   }

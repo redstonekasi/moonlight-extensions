@@ -20,8 +20,8 @@ export const webpackModules: ExtensionWebExports["webpackModules"] = {
         getUserBannerURL,
         getGuildMemberAvatarURLSimple,
         getGuildMemberBannerURL,
-      } = spacepack.findByExports("getUserAvatarURL")[0].exports;
-      const { copy } = spacepack.findByCode('document.queryCommandEnabled("copy")')[0].exports;
+      } = spacepack.findByExports("getUserAvatarURL")[0].exports.ZP;
+      const copy: any = Object.values(spacepack.findByCode('document.queryCommandEnabled("copy")')[0].exports).filter((t) => typeof t === "function")[0];
 
       addItem("user-context", (props: any) => {
         // these are actually different wtf

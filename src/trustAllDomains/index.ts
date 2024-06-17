@@ -9,7 +9,7 @@ export const patches: ExtensionWebExports["patches"] = [
     }
   },
   {
-    find: "isSuspiciousDownload:",
+    find: '"bitbucket.org"',
     replace: {
       match: /(?<=function .\(.\){)(?=var)/,
       replacement: "return null;"
