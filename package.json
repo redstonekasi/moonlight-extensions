@@ -8,11 +8,11 @@
     "repo": "node repo.mjs"
   },
   "devDependencies": {
-    "@electron/asar": "^3.2.8",
-    "esbuild": "^0.19.11",
+    "@electron/asar": "^3.2.13",
+    "esbuild": "^0.24.0",
     "esbuild-copy-static-files": "^0.1.0"
   },
   "dependencies": {
-    "@moonlight-mod/types": "^1.1.6"
+    "@moonlight-mod/types": "^1.2.0"
   }
 }
