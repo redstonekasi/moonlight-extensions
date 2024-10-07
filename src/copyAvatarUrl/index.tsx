@@ -5,15 +5,18 @@ export const webpackModules: ExtensionWebExports["webpackModules"] = {
     dependencies: [
       { ext: "contextMenu", id: "contextMenu" },
       { ext: "spacepack", id: "spacepack" },
-      { ext: "common", id: "react" },
-      { ext: "common", id: "stores" },
+      { id: "react" },
+      { id: "discord/stores/UserStore" },
+      { id: "discord/stores/GuildMemberStore" },
     ],
     entrypoint: true,
     run: (module, exports, require) => {
       const spacepack = require("spacepack_spacepack").default;
-      const React = require("common_react");
-      const { addItem, MenuItem } = require("contextMenu_contextMenu");
-      const stores = require("common_stores");
+      const { addItem, MenuItem } = require("contextMenu_contextMenu") as any; // todo: types are acting up here ugh
+
+      const React = require("react");
+      const UserStore = require("discord/stores/UserStore").default;
+      const GuildMemberStore = require("discord/stores/GuildMemberStore").default;
 
       const {
         getUserAvatarURL,
@@ -25,7 +28,7 @@ export const webpackModules: ExtensionWebExports["webpackModules"] = {
 
       addItem("user-context", (props: any) => {
         // these are actually different wtf
-        const user = stores.UserStore.getUser(props.user.id);
+        const user = UserStore.getUser(props.user.id);
 
         const avatar = getUserAvatarURL(user, true, 1024, "png");
         const children = [];
@@ -55,7 +58,7 @@ export const webpackModules: ExtensionWebExports["webpackModules"] = {
           );
         }
 
-        const member = stores.GuildMemberStore.getMember(props.guildId, user.id);
+        const member = GuildMemberStore.getMember(props.guildId, user.id);
         if (member?.banner) {
           const bannerUrl = getGuildMemberBannerURL({
             id: user.id,

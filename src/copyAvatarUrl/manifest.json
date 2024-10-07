@@ -1,6 +1,7 @@
 {
   "id": "copyAvatarUrl",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "apiLevel": 2,
   "meta": {
     "name": "Copy Avatar URL",
     "tagline": "Adds menu entries to copy avatar and banner URLs",

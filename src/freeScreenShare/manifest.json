@@ -1,6 +1,7 @@
 {
   "id": "freeScreenShare",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "apiLevel": 2,
   "meta": {
     "name": "Free Screen Share",
     "tagline": "Makes all screen share presets free",

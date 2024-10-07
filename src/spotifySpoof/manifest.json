@@ -1,6 +1,7 @@
 {
   "id": "spotifySpoof",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "apiLevel": 2,
   "meta": {
     "name": "Spotify Spoof",
     "tagline": "Enables Listen Along without Spotify Premium",

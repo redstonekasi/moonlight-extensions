@@ -1,6 +1,7 @@
 {
   "id": "noScreenSharePreview",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "apiLevel": 2,
   "meta": {
     "name": "No Screen Share Preview",
     "tagline": "Stop previews of your screen share from being sent",

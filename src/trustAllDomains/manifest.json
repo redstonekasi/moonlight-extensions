@@ -1,6 +1,7 @@
 {
   "id": "trustAllDomains",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "apiLevel": 2,
   "meta": {
     "name": "Trust All Domains",
     "tagline": "Trust all links and downloads",
