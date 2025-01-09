@@ -1,0 +1,11 @@
+{
+  "id": "noHelp",
+  "version": "1.0.0",
+  "apiLevel": 2,
+  "meta": {
+    "name": "No Help",
+    "tagline": "Disable F1 help keybind",
+    "authors": ["redstonekasi"],
+    "source": "https://github.com/redstonekasi/moonlight-extensions"
+  }
+}
