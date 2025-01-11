@@ -1,21 +1,9 @@
-import { getKeywords } from "@moonlight-mod/wp/highlight_highlight";
-import { addRule } from "@moonlight-mod/wp/markdown_markdown";
+import { matchKeywords } from "@moonlight-mod/wp/highlight_highlight";
+import { addRule, blacklistFromRuleset } from "@moonlight-mod/wp/markdown_markdown";
 
-addRule("highlightHighlight", () => ({
+addRule("highlightHighlight", (rules) => ({
 	order: -1,
-	match(source, state) {
-		const keywords = getKeywords();
-
-		for (const word of keywords) {
-			const i = source.toLowerCase().indexOf(word);
-			if (i === -1) continue;
-			const start = source.substring(0, i);
-			const end = source.substring(i + word.length);
-			return [source, word, start, end];
-		}
-
-		return null;
-	},
+	match: matchKeywords,
 	parse(capture, parse, state) {
 		return [
 			parse(capture[2], state),
@@ -24,3 +12,6 @@ addRule("highlightHighlight", () => ({
 		];
 	},
 }), () => ({ type: "skip" }));
+
+blacklistFromRuleset("INLINE_REPLY_RULES", "highlightHighlight");
+blacklistFromRuleset("EMBED_TITLE_RULES", "highlightHighlight");
