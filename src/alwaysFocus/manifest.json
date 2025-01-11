@@ -1,11 +1,11 @@
 {
-  "id": "alwaysFocus",
-  "version": "1.0.0",
-  "apiLevel": 2,
-  "meta": {
-    "name": "Always Focus",
-    "tagline": "Pretend to always focus main window",
-    "authors": ["redstonekasi"],
-    "source": "https://github.com/redstonekasi/moonlight-extensions"
-  }
+	"id": "alwaysFocus",
+	"version": "1.0.0",
+	"apiLevel": 2,
+	"meta": {
+		"name": "Always Focus",
+		"tagline": "Pretend to always focus main window",
+		"authors": ["redstonekasi"],
+		"source": "https://github.com/redstonekasi/moonlight-extensions"
+	}
 }

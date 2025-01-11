@@ -1,11 +1,11 @@
 {
-  "id": "trustAllDomains",
-  "version": "1.0.1",
-  "apiLevel": 2,
-  "meta": {
-    "name": "Trust All Domains",
-    "tagline": "Trust all links and downloads",
-    "authors": ["redstonekasi"],
-    "source": "https://github.com/redstonekasi/moonlight-extensions"
-  }
+	"id": "trustAllDomains",
+	"version": "1.0.1",
+	"apiLevel": 2,
+	"meta": {
+		"name": "Trust All Domains",
+		"tagline": "Trust all links and downloads",
+		"authors": ["redstonekasi"],
+		"source": "https://github.com/redstonekasi/moonlight-extensions"
+	}
 }

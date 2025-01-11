@@ -1,19 +1,19 @@
 {
-  "id": "customIdleTimeout",
-  "version": "1.0.0",
-  "apiLevel": 2,
-  "meta": {
-    "name": "Custom Idle Timeout",
-    "tagline": "Change idle status timeout",
-    "description": "**Note**: Discord does not check idle time very often, the timeout may not be accurate at too low values.",
-    "authors": ["redstonekasi"],
-    "source": "https://github.com/redstonekasi/moonlight-extensions"
-  },
-  "settings": {
-    "timeout": {
-      "displayName": "Timeout (seconds)",
-      "type": "string",
-      "default": "600"
-    }
-  }
+	"id": "customIdleTimeout",
+	"version": "1.0.0",
+	"apiLevel": 2,
+	"meta": {
+		"name": "Custom Idle Timeout",
+		"tagline": "Change idle status timeout",
+		"description": "**Note**: Discord does not check idle time very often, the timeout may not be accurate at too low values.",
+		"authors": ["redstonekasi"],
+		"source": "https://github.com/redstonekasi/moonlight-extensions"
+	},
+	"settings": {
+		"timeout": {
+			"displayName": "Timeout (seconds)",
+			"type": "string",
+			"default": "600"
+		}
+	}
 }

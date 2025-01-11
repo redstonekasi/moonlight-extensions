@@ -1,0 +1,13 @@
+{
+	"useTabs": true,
+	"lineWidth": 120,
+	"excludes": [
+		"**/node_modules",
+		"**/*-lock.json",
+		"**/dist"
+	],
+	"plugins": [
+		"https://plugins.dprint.dev/typescript-0.90.5.wasm",
+		"https://plugins.dprint.dev/json-0.19.2.wasm"
+	]
+}

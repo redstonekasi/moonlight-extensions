@@ -1,11 +1,11 @@
 {
-  "id": "noScreenSharePreview",
-  "version": "1.0.1",
-  "apiLevel": 2,
-  "meta": {
-    "name": "No Screen Share Preview",
-    "tagline": "Stop previews of your screen share from being sent",
-    "authors": ["redstonekasi"],
-    "source": "https://github.com/redstonekasi/moonlight-extensions"
-  }
+	"id": "noScreenSharePreview",
+	"version": "1.0.1",
+	"apiLevel": 2,
+	"meta": {
+		"name": "No Screen Share Preview",
+		"tagline": "Stop previews of your screen share from being sent",
+		"authors": ["redstonekasi"],
+		"source": "https://github.com/redstonekasi/moonlight-extensions"
+	}
 }

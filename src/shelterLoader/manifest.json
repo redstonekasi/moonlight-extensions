@@ -1,28 +1,28 @@
 {
-  "id": "shelterLoader",
-  "version": "1.0.1",
-  "apiLevel": 2,
-  "meta": {
-    "name": "Shelter Loader",
-    "tagline": "Loads your favourite flux interceptor",
-    "authors": ["redstonekasi"],
-    "source": "https://github.com/redstonekasi/moonlight-extensions"
-  },
-  "settings": {
-    "sourceType": {
-      "type": "select",
-      "displayName": "Source",
-      "options": [
-        { "value": "remote", "label": "Remote" },
-        { "value": "local", "label": "Local" }
-      ],
-      "default": "remote"
-    },
-    "sourcePath": {
-      "type": "string",
-      "displayName": "Path",
-      "description": "If source is remote, URL, otherwise a path to the shelter bundle",
-      "default": "https://raw.githubusercontent.com/uwu/shelter-builds/main/shelter.js"
-    }
-  }
+	"id": "shelterLoader",
+	"version": "1.0.1",
+	"apiLevel": 2,
+	"meta": {
+		"name": "Shelter Loader",
+		"tagline": "Loads your favourite flux interceptor",
+		"authors": ["redstonekasi"],
+		"source": "https://github.com/redstonekasi/moonlight-extensions"
+	},
+	"settings": {
+		"sourceType": {
+			"type": "select",
+			"displayName": "Source",
+			"options": [
+				{ "value": "remote", "label": "Remote" },
+				{ "value": "local", "label": "Local" }
+			],
+			"default": "remote"
+		},
+		"sourcePath": {
+			"type": "string",
+			"displayName": "Path",
+			"description": "If source is remote, URL, otherwise a path to the shelter bundle",
+			"default": "https://raw.githubusercontent.com/uwu/shelter-builds/main/shelter.js"
+		}
+	}
 }

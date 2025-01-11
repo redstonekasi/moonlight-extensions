@@ -1,12 +1,12 @@
 {
-  "id": "copyAvatarUrl",
-  "version": "1.0.1",
-  "apiLevel": 2,
-  "meta": {
-    "name": "Copy Avatar URL",
-    "tagline": "Adds menu entries to copy avatar and banner URLs",
-    "authors": ["redstonekasi"],
-    "source": "https://github.com/redstonekasi/moonlight-extensions"
-  },
-  "dependencies": ["contextMenu", "spacepack", "common"]
+	"id": "copyAvatarUrl",
+	"version": "1.0.1",
+	"apiLevel": 2,
+	"meta": {
+		"name": "Copy Avatar URL",
+		"tagline": "Adds menu entries to copy avatar and banner URLs",
+		"authors": ["redstonekasi"],
+		"source": "https://github.com/redstonekasi/moonlight-extensions"
+	},
+	"dependencies": ["contextMenu", "spacepack", "common"]
 }

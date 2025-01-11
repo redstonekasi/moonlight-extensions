@@ -1,11 +1,11 @@
 {
-  "id": "noCallIdle",
-  "version": "1.0.1",
-  "apiLevel": 2,
-  "meta": {
-    "name": "No Call Idle",
-    "tagline": "Prevents disconnects after 5 minutes of being in an empty call",
-    "authors": ["redstonekasi"],
-    "source": "https://github.com/redstonekasi/moonlight-extensions"
-  }
+	"id": "noCallIdle",
+	"version": "1.0.1",
+	"apiLevel": 2,
+	"meta": {
+		"name": "No Call Idle",
+		"tagline": "Prevents disconnects after 5 minutes of being in an empty call",
+		"authors": ["redstonekasi"],
+		"source": "https://github.com/redstonekasi/moonlight-extensions"
+	}
 }

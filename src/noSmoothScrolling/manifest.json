@@ -1,11 +1,11 @@
 {
-  "id": "noSmoothScrolling",
-  "version": "1.0.1",
-  "apiLevel": 2,
-  "meta": {
-    "name": "No Smooth Scrolling",
-    "tagline": "Disables smooth scrolling",
-    "authors": ["redstonekasi"],
-    "source": "https://github.com/redstonekasi/moonlight-extensions"
-  }
+	"id": "noSmoothScrolling",
+	"version": "1.0.1",
+	"apiLevel": 2,
+	"meta": {
+		"name": "No Smooth Scrolling",
+		"tagline": "Disables smooth scrolling",
+		"authors": ["redstonekasi"],
+		"source": "https://github.com/redstonekasi/moonlight-extensions"
+	}
 }

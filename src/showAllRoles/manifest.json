@@ -1,11 +1,11 @@
 {
-  "id": "showAllRoles",
-  "version": "1.0.0",
-  "apiLevel": 2,
-  "meta": {
-    "name": "Show All Roles",
-    "tagline": "Do not collapse role list",
-    "authors": ["redstonekasi"],
-    "source": "https://github.com/redstonekasi/moonlight-extensions"
-  }
+	"id": "showAllRoles",
+	"version": "1.0.0",
+	"apiLevel": 2,
+	"meta": {
+		"name": "Show All Roles",
+		"tagline": "Do not collapse role list",
+		"authors": ["redstonekasi"],
+		"source": "https://github.com/redstonekasi/moonlight-extensions"
+	}
 }
