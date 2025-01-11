@@ -1,0 +1,26 @@
+{
+	"$schema": "https://moonlight-mod.github.io/manifest.schema.json",
+	"id": "highlight",
+	"version": "1.0.0",
+	"apiLevel": 2,
+	"meta": {
+		"name": "Highlight",
+		"tagline": "IRC-like highlighting and notifications for select keywords",
+		"authors": ["redstonekasi"],
+		"source": "https://github.com/redstonekasi/moonlight-extensions"
+	},
+	"dependencies": ["markdown"],
+	"settings": {
+		"keywords": {
+			"displayName": "Keywords (case insensitive)",
+			"type": "list",
+			"default": []
+		},
+		"ignoreFocusMode": {
+			"displayName": "Ignore status",
+			"description": "Higlight messages regardless of Do Not Disturb or Focus Mode",
+			"type": "boolean",
+			"default": false
+		}
+	}
+}
