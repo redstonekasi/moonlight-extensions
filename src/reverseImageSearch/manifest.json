@@ -1,0 +1,28 @@
+{
+	"$schema": "https://moonlight-mod.github.io/manifest.schema.json",
+	"id": "reverseImageSearch",
+	"version": "1.0.0",
+	"apiLevel": 2,
+	"meta": {
+		"name": "Reverse Image Search",
+		"tagline": "Look up images on reverse image search services",
+		"authors": ["redstonekasi"],
+		"source": "https://github.com/redstonekasi/moonlight-extensions"
+	},
+	"dependencies": ["contextMenu"],
+	"settings": {
+		"services": {
+			"type": "dictionary",
+			"displayName": "Services",
+			"description": "Service name to service URL",
+			"default": {
+				"ImgOps": "https://imgops.com/start?url=%s",
+				"TinEye": "https://tineye.com/search?url=%s",
+				"Google Images": "https://lens.google.com/uploadbyurl?url=%s",
+				"Yandex Images": "https://yandex.com/images/search?rpt=imageview&url=%s",
+				"SauceNAO": "https://saucenao.com/search.php?url=%s",
+				"IQDB": "https://iqdb.org/?url=%s"
+			}
+		}
+	}
+}
