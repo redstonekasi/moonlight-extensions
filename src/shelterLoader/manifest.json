@@ -9,6 +9,7 @@
 		"authors": ["redstonekasi"],
 		"source": "https://github.com/redstonekasi/moonlight-extensions"
 	},
+	"environment": "desktop",
 	"settings": {
 		"sourceType": {
 			"type": "select",

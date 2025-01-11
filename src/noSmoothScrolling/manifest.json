@@ -3,6 +3,7 @@
 	"id": "noSmoothScrolling",
 	"version": "1.0.1",
 	"apiLevel": 2,
+	"environment": "desktop",
 	"meta": {
 		"name": "No Smooth Scrolling",
 		"tagline": "Disables smooth scrolling",
