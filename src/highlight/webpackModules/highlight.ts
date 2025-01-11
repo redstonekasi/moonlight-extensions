@@ -17,7 +17,7 @@ export function matchKeywords(source: string) {
 
 		const start = source.substring(0, i);
 		const end = source.substring(i + word.length);
-		return [source, word, start, end];
+		return [source, source.substring(i, i + word.length), start, end];
 	}
 
 	return null;
