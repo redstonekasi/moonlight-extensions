@@ -1,4 +1,7 @@
-export function shouldHighlight(message: any, channelId: any) {
-	const words = moonlight.getConfigOption<string[]>("highlight", "keywords") ?? [];
-	return words.some((w) => message.content.toLowerCase().includes(w.trim().toLowerCase()));
-}
+export const getKeywords = () =>
+	(moonlight.getConfigOption<string[]>("highlight", "keywords") ?? [])
+		.map((w) => w.trim().toLowerCase())
+		.filter(Boolean);
+
+export const shouldHighlight = (message: any, channelId: any) =>
+	getKeywords().some((w) => message.content.toLowerCase().includes(w));

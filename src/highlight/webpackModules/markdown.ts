@@ -1,17 +1,17 @@
+import { getKeywords } from "@moonlight-mod/wp/highlight_highlight";
 import { addRule } from "@moonlight-mod/wp/markdown_markdown";
 
 addRule("highlightHighlight", () => ({
 	order: -1,
 	match(source, state) {
-		const words = moonlight.getConfigOption<string[]>("highlight", "keywords") ?? [];
+		const keywords = getKeywords();
 
-		for (const word of words) {
-			const normalized = word.trim().toLowerCase();
-			const i = source.toLowerCase().indexOf(normalized);
+		for (const word of keywords) {
+			const i = source.toLowerCase().indexOf(word);
 			if (i === -1) continue;
 			const start = source.substring(0, i);
-			const end = source.substring(i + normalized.length);
-			return [source, normalized, start, end];
+			const end = source.substring(i + word.length);
+			return [source, word, start, end];
 		}
 
 		return null;
