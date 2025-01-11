@@ -1,4 +1,5 @@
 {
+	"$schema": "https://moonlight-mod.github.io/manifest.schema.json",
 	"id": "spotifySpoof",
 	"version": "1.0.2",
 	"apiLevel": 2,
