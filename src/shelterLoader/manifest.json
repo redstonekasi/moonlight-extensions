@@ -1,7 +1,7 @@
 {
 	"$schema": "https://moonlight-mod.github.io/manifest.schema.json",
 	"id": "shelterLoader",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"apiLevel": 2,
 	"meta": {
 		"name": "Shelter Loader",
@@ -12,6 +12,7 @@
 	"environment": "desktop",
 	"settings": {
 		"sourceType": {
+			"advice": "restart",
 			"type": "select",
 			"displayName": "Source",
 			"options": [
@@ -21,6 +22,7 @@
 			"default": "remote"
 		},
 		"sourcePath": {
+			"advice": "restart",
 			"type": "string",
 			"displayName": "Path",
 			"description": "If source is remote, URL, otherwise a path to the shelter bundle",
