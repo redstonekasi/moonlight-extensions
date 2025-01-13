@@ -1,13 +1,14 @@
 {
 	"$schema": "https://moonlight-mod.github.io/manifest.schema.json",
 	"id": "highlight",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"apiLevel": 2,
 	"meta": {
 		"name": "Highlight",
 		"tagline": "IRC-like highlighting and notifications for select keywords",
 		"authors": ["redstonekasi"],
-		"source": "https://github.com/redstonekasi/moonlight-extensions"
+		"source": "https://github.com/redstonekasi/moonlight-extensions",
+		"changelog": "Fix crash when searching"
 	},
 	"dependencies": ["markdown"],
 	"settings": {

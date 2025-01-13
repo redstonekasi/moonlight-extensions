@@ -1,12 +1,13 @@
 {
 	"$schema": "https://moonlight-mod.github.io/manifest.schema.json",
 	"id": "showAllRoles",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"apiLevel": 2,
 	"meta": {
 		"name": "Show All Roles",
 		"tagline": "Do not collapse role list",
 		"authors": ["redstonekasi"],
-		"source": "https://github.com/redstonekasi/moonlight-extensions"
+		"source": "https://github.com/redstonekasi/moonlight-extensions",
+		"changelog": "Update patches to behave better"
 	}
 }
