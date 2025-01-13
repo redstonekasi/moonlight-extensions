@@ -4,9 +4,10 @@ export const getKeywords = () =>
 		.filter(Boolean);
 
 const whitespace = /\s/;
-export function matchKeywords(source: string) {
-	const keywords = getKeywords();
+export function matchKeywords(source: string, state?: any) {
+	if (state?.__highlightSearch) return null;
 
+	const keywords = getKeywords();
 	for (const word of keywords) {
 		const i = source.toLowerCase().indexOf(word);
 		if (i === -1) continue;

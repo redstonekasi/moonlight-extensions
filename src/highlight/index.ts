@@ -24,6 +24,14 @@ export const patches: ExtensionWebExports["patches"] = [
 			replacement: (_, msg) => `require("highlight_highlight").shouldHighlight(${msg},${msg}.channelId)||`,
 		}],
 	},
+	// Search highlights stuff and gets sad that we exist, let's fix that.
+	{
+		find: ".parseAutoModerationSystemMessage,",
+		replace: {
+			match: /(?<=return{)(?=\.\.\..,allowLinks:)/,
+			replacement: "__highlightSearch:arguments[0].isSearchHit,",
+		},
+	},
 ];
 
 export const webpackModules: ExtensionWebExports["webpackModules"] = {
