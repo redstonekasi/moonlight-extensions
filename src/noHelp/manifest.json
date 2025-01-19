@@ -1,12 +1,13 @@
 {
 	"$schema": "https://moonlight-mod.github.io/manifest.schema.json",
 	"id": "noHelp",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"apiLevel": 2,
 	"meta": {
 		"name": "No Help",
 		"tagline": "Disable F1 help keybind",
 		"authors": ["redstonekasi"],
-		"source": "https://github.com/redstonekasi/moonlight-extensions"
+		"source": "https://github.com/redstonekasi/moonlight-extensions",
+		"donate": "https://github.com/sponsors/redstonekasi"
 	}
 }

@@ -1,13 +1,14 @@
 {
 	"$schema": "https://moonlight-mod.github.io/manifest.schema.json",
 	"id": "viewJson",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"apiLevel": 2,
 	"meta": {
 		"name": "View JSON",
 		"tagline": "Add context menu entry to view or copy message/user/guild JSON",
 		"authors": ["redstonekasi"],
-		"source": "https://github.com/redstonekasi/moonlight-extensions"
+		"source": "https://github.com/redstonekasi/moonlight-extensions",
+		"donate": "https://github.com/sponsors/redstonekasi"
 	},
 	"dependencies": ["contextMenu", "spacepack"]
 }

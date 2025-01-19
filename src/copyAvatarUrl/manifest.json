@@ -1,13 +1,15 @@
 {
 	"$schema": "https://moonlight-mod.github.io/manifest.schema.json",
 	"id": "copyAvatarUrl",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"apiLevel": 2,
 	"meta": {
 		"name": "Copy Avatar URL",
 		"tagline": "Adds menu entries to copy avatar and banner URLs",
 		"authors": ["redstonekasi"],
-		"source": "https://github.com/redstonekasi/moonlight-extensions"
+		"source": "https://github.com/redstonekasi/moonlight-extensions",
+		"donate": "https://github.com/sponsors/redstonekasi",
+		"changelog": "Move to using mapped modules"
 	},
-	"dependencies": ["contextMenu", "spacepack", "common"]
+	"dependencies": ["contextMenu", "common"]
 }

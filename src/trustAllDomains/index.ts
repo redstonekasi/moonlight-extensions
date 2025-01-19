@@ -11,7 +11,7 @@ export const patches: ExtensionWebExports["patches"] = [
 	{
 		find: "\"bitbucket.org\"",
 		replace: {
-			match: /(?<=function .\(.\){)(?=var)/,
+			match: /(?<=function \i\(\i\){)(?=var)/,
 			replacement: "return null;",
 		},
 	},

@@ -1,12 +1,13 @@
 {
 	"$schema": "https://moonlight-mod.github.io/manifest.schema.json",
 	"id": "freeScreenShare",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"apiLevel": 2,
 	"meta": {
 		"name": "Free Screen Share",
 		"tagline": "Makes all screen share presets free",
 		"authors": ["redstonekasi"],
-		"source": "https://github.com/redstonekasi/moonlight-extensions"
+		"source": "https://github.com/redstonekasi/moonlight-extensions",
+		"donate": "https://github.com/sponsors/redstonekasi"
 	}
 }

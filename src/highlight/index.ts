@@ -20,7 +20,7 @@ export const patches: ExtensionWebExports["patches"] = [
 	{ // This takes care of ReadStateStore, manual ack and notifications.
 		find: "=!1,suppressRoles:",
 		replace: [{
-			match: /(?<=let{(?:message|rawMessage):(.)[^}]+}=.;return )/g,
+			match: /(?<=let{(?:message|rawMessage):(\i)[^}]+}=.;return )/g,
 			replacement: (_, msg) => `require("highlight_highlight").shouldHighlight(${msg},${msg}.channelId)||`,
 		}],
 	},
@@ -28,7 +28,7 @@ export const patches: ExtensionWebExports["patches"] = [
 	{
 		find: ".parseAutoModerationSystemMessage,",
 		replace: {
-			match: /(?<=return{)(?=\.\.\..,allowLinks:)/,
+			match: /(?<=return{)(?=\.\.\.\i,allowLinks:)/,
 			replacement: "__highlightSearch:arguments[0].isSearchHit,",
 		},
 	},

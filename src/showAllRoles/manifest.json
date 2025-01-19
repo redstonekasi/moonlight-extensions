@@ -8,6 +8,7 @@
 		"tagline": "Do not collapse role list",
 		"authors": ["redstonekasi"],
 		"source": "https://github.com/redstonekasi/moonlight-extensions",
-		"changelog": "Update patches to behave better"
+		"donate": "https://github.com/sponsors/redstonekasi",
+		"changelog": "Meta change"
 	}
 }

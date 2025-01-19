@@ -4,7 +4,7 @@ export const patches: ExtensionWebExports["patches"] = [
 	{
 		find: "canStreamQuality:",
 		replace: {
-			match: /(?<=canStreamQuality:).{1,2}?(?=,)/,
+			match: /(?<=canStreamQuality:)\i(?=,)/,
 			replacement: "()=>!0",
 		},
 	},

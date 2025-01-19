@@ -1,13 +1,14 @@
 {
 	"$schema": "https://moonlight-mod.github.io/manifest.schema.json",
 	"id": "noSmoothScrolling",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"apiLevel": 2,
 	"environment": "desktop",
 	"meta": {
 		"name": "No Smooth Scrolling",
 		"tagline": "Disables smooth scrolling",
 		"authors": ["redstonekasi"],
-		"source": "https://github.com/redstonekasi/moonlight-extensions"
+		"source": "https://github.com/redstonekasi/moonlight-extensions",
+		"donate": "https://github.com/sponsors/redstonekasi"
 	}
 }

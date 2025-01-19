@@ -7,6 +7,7 @@
 		"name": "No Screen Share Preview",
 		"tagline": "Stop previews of your screen share from being sent",
 		"authors": ["redstonekasi"],
-		"source": "https://github.com/redstonekasi/moonlight-extensions"
+		"source": "https://github.com/redstonekasi/moonlight-extensions",
+		"donate": "https://github.com/sponsors/redstonekasi"
 	}
 }

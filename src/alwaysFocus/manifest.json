@@ -1,12 +1,13 @@
 {
 	"$schema": "https://moonlight-mod.github.io/manifest.schema.json",
 	"id": "alwaysFocus",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"apiLevel": 2,
 	"meta": {
 		"name": "Always Focus",
 		"tagline": "Pretend to always focus main window",
 		"authors": ["redstonekasi"],
-		"source": "https://github.com/redstonekasi/moonlight-extensions"
+		"source": "https://github.com/redstonekasi/moonlight-extensions",
+		"donate": "https://github.com/sponsors/redstonekasi"
 	}
 }

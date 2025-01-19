@@ -1,30 +1,20 @@
 import { addItem, MenuItem } from "@moonlight-mod/wp/contextMenu_contextMenu";
 import React from "@moonlight-mod/wp/react";
-import spacepack from "@moonlight-mod/wp/spacepack_spacepack";
 
-const UserStore = require("discord/stores/UserStore").default;
 const GuildMemberStore = require("discord/stores/GuildMemberStore").default;
-
-const {
-	getUserAvatarURL,
-	getUserBannerURL,
-	getGuildMemberAvatarURLSimple,
-	getGuildMemberBannerURL,
-} = spacepack.findByExports("getUserAvatarURL")[0].exports.ZP;
-const copy: any =
-	Object.values(spacepack.findByCode("document.queryCommandEnabled(\"copy\")")[0].exports).filter((t) =>
-		typeof t === "function"
-	)[0];
+const UserStore = require("discord/stores/UserStore").default;
+const AvatarUtils = require("discord/utils/AvatarUtils").default;
+const { copy } = require("discord/utils/ClipboardUtils");
 
 addItem("user-context", (props: any) => {
 	// these are actually different wtf
 	const user = UserStore.getUser(props.user.id);
 
-	const avatar = getUserAvatarURL(user, true, 1024, "png");
+	const avatar = AvatarUtils.getUserAvatarURL(user, true, 1024, "png");
 	const children = [];
 
 	if (user.banner) {
-		const bannerUrl = getUserBannerURL({
+		const bannerUrl = AvatarUtils.getUserBannerURL({
 			id: user.id,
 			banner: user.banner,
 			canAnimate: true,
@@ -36,7 +26,7 @@ addItem("user-context", (props: any) => {
 	}
 
 	if (user.hasAvatarForGuild(props.guildId)) {
-		const guildAvatar = getGuildMemberAvatarURLSimple({
+		const guildAvatar = AvatarUtils.getGuildMemberAvatarURLSimple({
 			guildId: props.guildId,
 			userId: user.id,
 			avatar: user.guildMemberAvatars[props.guildId],
@@ -50,7 +40,7 @@ addItem("user-context", (props: any) => {
 
 	const member = GuildMemberStore.getMember(props.guildId, user.id);
 	if (member?.banner) {
-		const bannerUrl = getGuildMemberBannerURL({
+		const bannerUrl = AvatarUtils.getGuildMemberBannerURL({
 			id: user.id,
 			guildId: props.guildId,
 			banner: member.banner,

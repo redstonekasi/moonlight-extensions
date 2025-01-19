@@ -1,14 +1,15 @@
 {
 	"$schema": "https://moonlight-mod.github.io/manifest.schema.json",
 	"id": "customIdleTimeout",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"apiLevel": 2,
 	"meta": {
 		"name": "Custom Idle Timeout",
 		"tagline": "Change idle status timeout",
 		"description": "**Note**: Discord does not check idle time very often, the timeout may not be accurate at too low values.",
 		"authors": ["redstonekasi"],
-		"source": "https://github.com/redstonekasi/moonlight-extensions"
+		"source": "https://github.com/redstonekasi/moonlight-extensions",
+		"donate": "https://github.com/sponsors/redstonekasi"
 	},
 	"settings": {
 		"timeout": {
