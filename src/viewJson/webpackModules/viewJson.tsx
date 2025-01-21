@@ -25,7 +25,7 @@ function patch(props: any) {
 
 		children.push(
 			<MenuItem
-				id={`view-json-view-${id}`}
+				id={`view-json-view-${key}-${id}`}
 				label={`View ${mapping[key]} JSON`}
 				icon={PaperIcon}
 				action={() => {
@@ -44,7 +44,7 @@ function patch(props: any) {
 				}}
 			/>,
 			<MenuItem
-				id={`view-json-copy-${id}`}
+				id={`view-json-copy-${key}-${id}`}
 				label={`Copy ${mapping[key]} JSON`}
 				icon={CopyIcon}
 				action={() => copy(stringified())}
