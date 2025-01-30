@@ -4,8 +4,8 @@ export const patches: ExtensionWebExports["patches"] = [
 	{
 		find: "id:\"invite-to-server\"",
 		replace: {
-			match: /(?<=function\(\){return )\i/,
-			replacement: "()=>null",
+			match: /(?<=function \i\(\i\){)(?=let{user:\i,guildId:)/,
+			replacement: "return null;",
 		},
 	},
 ];

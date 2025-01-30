@@ -1,13 +1,14 @@
 {
 	"$schema": "https://moonlight-mod.github.io/manifest.schema.json",
 	"id": "inviteToNowhere",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"apiLevel": 2,
 	"meta": {
 		"name": "Invite To Nowhere",
 		"tagline": "Removes the \"Invite to Server\" context menu option",
 		"authors": ["redstonekasi"],
 		"source": "https://github.com/redstonekasi/moonlight-extensions",
-		"donate": "https://github.com/sponsors/redstonekasi"
+		"donate": "https://github.com/sponsors/redstonekasi",
+		"changelog": "Fix for latest Discord update"
 	}
 }
