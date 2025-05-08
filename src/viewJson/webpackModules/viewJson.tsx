@@ -61,6 +61,7 @@ function patch(props: any) {
 }
 
 addItem("message", patch as any, /^devmode-copy-id/ as any, true);
+addItem("message-actions", patch as any, /^devmode-copy-id/ as any, true);
 addItem("user-context", patch as any, /^devmode-copy-id/ as any, true);
 addItem("guild-context", patch as any, /^devmode-copy-id/ as any, true);
 addItem("channel-context", patch as any, /^devmode-copy-id/ as any, true);
