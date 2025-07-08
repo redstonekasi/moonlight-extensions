@@ -1,5 +1,6 @@
 import { addItem, MenuItem } from "@moonlight-mod/wp/contextMenu_contextMenu";
-import { CopyIcon, openModal, PaperIcon } from "@moonlight-mod/wp/discord/components/common/index";
+import { CopyIcon, PaperIcon } from "@moonlight-mod/wp/discord/components/common/index";
+import { openModal } from "@moonlight-mod/wp/discord/modules/modals/Modals";
 import { copy } from "@moonlight-mod/wp/discord/utils/ClipboardUtils";
 import React from "@moonlight-mod/wp/react";
 import spacepack from "@moonlight-mod/wp/spacepack_spacepack";
